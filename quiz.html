@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Cultura General</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Juego de Cultura General</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="streaming.html">Plataformas de Streaming</a></li>
+                <li><a href="quiz.html">Juego de Cultura General</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="quiz-container">
+            <h2>¡Responde las preguntas!</h2>
+            <div id="question-container">
+                <p id="question"></p>
+                <button class="answer-btn" onclick="checkAnswer(1)">Respuesta 1</button>
+                <button class="answer-btn" onclick="checkAnswer(2)">Respuesta 2</button>
+                <button class="answer-btn" onclick="checkAnswer(3)">Respuesta 3</button>
+                <button class="answer-btn" onclick="checkAnswer(4)">Respuesta 4</button>
+            </div>
+            <div id="result-container">
+                <p id="score">Puntuación: 0/10</p>
+                <button onclick="startQuiz()">Iniciar Quiz</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Juego de Cultura General. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
